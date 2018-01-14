@@ -119,10 +119,10 @@ export default {
       // if the user starts a tradebot we do some
       // checks first.
       if(this.config.type === 'tradebot') {
-        if(this.existingTradebot) {
-          let str = 'You already have a tradebot running on this exchange';
-          str += ', you can only run one tradebot per exchange.';
-          return alert(str);
+        // if(this.existingTradebot) {
+          // let str = 'You already have a tradebot running on this exchange';
+          // str += ', you can only run one tradebot per exchange.';
+          // return alert(str);
         }
 
         if(!this.availableApiKeys.includes(this.exchange))
